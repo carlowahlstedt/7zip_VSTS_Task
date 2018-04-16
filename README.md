@@ -1,12 +1,12 @@
+![](https://github.com/carlowahlstedt/7zip_VSTS_Task/blob/master/static/images/logo.png?raw=true)
+
 ## 7zip ##
 
-7zip is a task!
+[7zip](https://www.7-zip.org/) is a task!
 
 ### Quick steps to get started ###
 
-![](/static/images/Screen1.png)
-
-//TODO:Add a walk-through of key features to your extension. See [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) for an example.
+Make sure you have 7zip installed on the build server.
 
 ### Known issue(s)
 
@@ -25,8 +25,10 @@ The [source](//TODO:Point to your repo or remove this) to this extension is avai
 
 ### Contributors ###
 
-We thank the following contributor(s) for this extension: @TODO@-Add and credit contributors.
+We thank the following contributor(s) for this extension:
 
 ### Feedback ###
-- Add a review below.
-- Send us an [email](mailto://TODO:Add your email address).
+
+- [Add a review](https://marketplace.visualstudio.com/items?itemName=carlowahlstedt.7zip#review-details)
+- [Post an issue on Github](https://github.com/carlowahlstedt/7zip_VSTS_Task/issues/new)
+- Send us an [email](mailto:carlowahlstedt@gmail.com)
