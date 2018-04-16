@@ -27,36 +27,35 @@
   "categories": [
     "Build and release"
   ],
-  "screenshots": [
-    {
-      "path": "static/images/screen1.png"
-    }
-  ],
   "content": {
     "license": {
       "path": "license.md"
     },
     "details": {
-      "path": "overview.md"
+      "path": "README.md"
     }
   },
   "links": {
     "getstarted": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
     },
     "support": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
     },
     "issues": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://bit.ly"
+    "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
+  },
+  "CustomerQnASupport": {
+    "enableqna": "false",
+    "url": "https://github.com/carlowahlstedt/NewmanPostman_VSTS_Task/issues"
   },
   "branding": {
-    "color": "rgb(220, 235, 252)",
+    "color": "rgb(0, 165, 255)",
     "theme": "light"
   },
   "files": [
