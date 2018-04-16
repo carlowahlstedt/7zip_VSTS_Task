@@ -1,0 +1,79 @@
+{
+  "manifestVersion": 1,
+  "id": "7zip",
+  "version": "0.1.1",
+  "name": "7zip",
+  "scopes": [],
+  "description": "7zip is a task!",
+  "publisher": "carlowahlstedt",
+  "galleryFlags": [
+    "Preview"
+  ],
+  "icons": {
+    "default": "static/images/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "demands": [
+    "api-version/3.0"
+  ],
+  "tags": [
+    "7zip",
+    "self extracting"
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "screenshots": [
+    {
+      "path": "static/images/screen1.png"
+    }
+  ],
+  "content": {
+    "license": {
+      "path": "license.md"
+    },
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://bit.ly"
+    },
+    "support": {
+      "uri": "https://bit.ly"
+    },
+    "issues": {
+      "uri": "https://bit.ly"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://bit.ly"
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "7zip"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "7zip",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "7zip"
+      }
+    }
+  ]
+}
