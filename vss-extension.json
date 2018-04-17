@@ -1,13 +1,13 @@
 {
   "manifestVersion": 1,
   "id": "7zip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "7zip",
   "scopes": [],
   "description": "7zip is a task!",
   "publisher": "carlowahlstedt",
   "galleryFlags": [
-    "Preview"
+    "Public"
   ],
   "icons": {
     "default": "static/images/logo.png"
