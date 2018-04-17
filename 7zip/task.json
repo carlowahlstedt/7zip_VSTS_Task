@@ -1,37 +1,43 @@
 {
-   "id": "02b5a567-e620-433b-b4fc-35f62ea16f85",
-   "name": "7zip",
-   "friendlyName": "7zip",
-   "description": "7zip in a task!",
-   "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
-   "category": "Utility",
-   "visibility": ["Build","Release"],
-   "author": "",
-   "version": {
-      "Major": 1,
-      "Minor": 0,
-      "Patch": 0
-   },
-   "demands": [],
-   "inputs": [
-      {
-         "name": "variable1",
-         "type": "filePath",
-         "label": "Path to Solution File",
-         "defaultValue": "",
-         "required": true
-      },
-      {
-         "name": "variable2",
-         "type": "string",
-         "label": "Sample text variable",
-         "defaultValue": "",
-         "required": false,
-         "helpMarkDown": "This will give you a hover-over tooltip"
-      }
-   ],
-   "instanceNameFormat": "7zip",
-   "execution":
-    {"Node":{"target":"7zip.js"}}
-   
+    "id": "02b5a567-e620-433b-b4fc-35f62ea16f85",
+    "name": "7zip",
+    "friendlyName": "7zip",
+    "description": "7zip in a task!",
+    "helpMarkDown": "[More Information](https://github.com/carlowahlstedt/7zip_VSTS_Task/blob/master/README.md)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Carlo Wahlstedt",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "demands": [],
+    "inputs": [
+        {
+            "name": "inputDirectory",
+            "type": "filePath",
+            "label": "Input Directory",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The directory to zip to"
+        },
+        {
+            "name": "outputDirectory",
+            "type": "filePath",
+            "label": "Output Directory",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "This is the path, including the filename."
+        }
+    ],
+    "instanceNameFormat": "7zip",
+    "execution": {
+        "Node": {
+            "target": "7zip.js"
+        }
+    }
 }
