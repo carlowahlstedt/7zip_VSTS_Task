@@ -7,10 +7,10 @@ function GetToolRunner() {
     zip7.arg('a');
     zip7.arg('-sfx7z.sfx');
 
-    let outputDirectory = tl.getPathInput('outputDirectory', false, true);
+    let outputDirectory = tl.getPathInput('outputDirectory', true, false);
     zip7.argIf(typeof outputDirectory != 'undefined' && tl.filePathSupplied('outputDirectory'), outputDirectory);
 
-    let inputDirectory = tl.getPathInput('inputDirectory', false, true);
+    let inputDirectory = tl.getPathInput('inputDirectory', true, true);
     zip7.argIf(typeof inputDirectory != 'undefined' && tl.filePathSupplied('inputDirectory'), inputDirectory);
 
     return zip7;
