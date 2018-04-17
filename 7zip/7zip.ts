@@ -10,7 +10,7 @@ function GetToolRunner() {
     let outputDirectory = tl.getPathInput('outputDirectory', true, false);
     zip7.argIf(typeof outputDirectory != 'undefined' && tl.filePathSupplied('outputDirectory'), outputDirectory);
 
-    let inputDirectory = tl.getPathInput('inputDirectory', true, true);
+    let inputDirectory = tl.getPathInput('inputDirectory', true, false);
     zip7.argIf(typeof inputDirectory != 'undefined' && tl.filePathSupplied('inputDirectory'), inputDirectory);
 
     return zip7;
