@@ -1,18 +1,30 @@
+import path = require('path');
 import tl = require('vsts-task-lib/task');
-//npm install vsts-task-lib
+import trm = require('vsts-task-lib/toolrunner');
 
-// Get task parameters
-let variable1: string = tl.getPathInput('variable1', false, true);
-let variable2: string = tl.getInput('variable2', true);
+function GetToolRunner() {
+    var zip7: trm.ToolRunner = tl.tool(tl.which('7z', true));
+    zip7.arg('a');
+    zip7.arg('-sfx7z.sfx');
 
+    let outputDirectory = tl.getPathInput('outputDirectory', false, true);
+    zip7.argIf(typeof outputDirectory != 'undefined' && tl.filePathSupplied('outputDirectory'), outputDirectory);
 
+    let inputDirectory = tl.getPathInput('inputDirectory', false, true);
+    zip7.argIf(typeof inputDirectory != 'undefined' && tl.filePathSupplied('inputDirectory'), inputDirectory);
+
+    return zip7;
+}
 
 async function run() {
     try {
-        //do your actions
-        tl.debug('variable1:' +variable1)
-        tl.debug('variable2:' +variable2)
-        
+        tl.debug('executing 7zip')
+        tl.setResourcePath(path.join(__dirname, 'task.json'));
+
+        var zip7: trm.ToolRunner = GetToolRunner();
+        await zip7.exec();
+
+        tl.setResult(tl.TaskResult.Succeeded, "Success");
     } catch (err) {
         tl.setResult(tl.TaskResult.Failed, err.message);
     }
