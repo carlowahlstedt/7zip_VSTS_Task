@@ -37,18 +37,18 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
+      "uri": "https://github.com/carlowahlstedt/7zip_VSTS_Task"
     },
     "support": {
-      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
+      "uri": "https://github.com/carlowahlstedt/7zip_VSTS_Task"
     },
     "issues": {
-      "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task/issues"
+      "uri": "https://github.com/carlowahlstedt/7zip_VSTS_Task/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/carlo.wahlstedt/7zip_VSTS_Task"
+    "uri": "https://github.com/carlowahlstedt/7zip_VSTS_Task"
   },
   "CustomerQnASupport": {
     "enableqna": "false",
